@@ -4,7 +4,7 @@
 
 <script>
 import 'milligram';
-import Home from "./pages/Home.vue"
+import Home from "./ui/pages/Home.vue";
 
 export default {
   name: 'App',
