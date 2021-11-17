@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import {Products} from "../core"
+import {Products} from "../../core"
 
 export default {
   name: 'Home',
