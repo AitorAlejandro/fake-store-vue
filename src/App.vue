@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import 'normalize.css';
-import 'milligram';
 import Home from "./ui/pages/Home.vue";
 
 export default {
