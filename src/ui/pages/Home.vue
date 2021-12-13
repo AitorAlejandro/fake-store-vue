@@ -1,7 +1,7 @@
 <template>
   <HomeLayout>
     <template v-slot:header>
-      <h1>{{ title }}</h1>
+      <h2>{{ title }}</h2>
     </template>
 
     <template v-slot:content>
@@ -9,7 +9,9 @@
     </template>
 
     <template v-slot:footer>
-      <p>Here's some footer info</p>
+      <footer>
+        <h2>Store Footer</h2>
+      </footer>
     </template>
   </HomeLayout>
 </template>

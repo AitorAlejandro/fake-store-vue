@@ -1,5 +1,6 @@
 <template>
   <header>
+    <h1>Fake Store</h1>
     <slot name="header"></slot>
   </header>
   <main>
