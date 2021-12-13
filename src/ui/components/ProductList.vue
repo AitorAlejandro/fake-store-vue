@@ -12,7 +12,11 @@
 </template>
 
 <script>
-import { Products } from "../../core";
+import { ProductRepositoryHttp } from "../../core/Products/infraestructure";
+import { Product } from "../../core/Products/application";
+
+const productRepositoryHttp = new ProductRepositoryHttp();
+const productService = new Product(productRepositoryHttp);
 
 export default {
   name: "ProductList",
@@ -22,9 +26,12 @@ export default {
     };
   },
   created() {
-    Products.getProducts().then((products) => {
-      this.products = products;
-    });
+    productService
+      .fetchAll()
+      .then((products) => {
+        this.products = products;
+      })
+      .catch(() => (this.products = []));
   },
 };
 </script>
